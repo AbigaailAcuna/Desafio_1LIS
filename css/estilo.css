@@ -1,0 +1,110 @@
+body {
+  background-image: url('azul.png');
+  background-size: cover;
+   display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	 border: 2px solid #FFF;
+  border-radius: 30px;
+  padding: 10px;
+  margin: 10px;
+  background-color: transparent;
+}
+
+.navbar img {
+	margin-right: 20px;
+	width: auto;
+  height: 60px;
+}
+
+/* Estilo del enlace de inicio de sesión en el navbar */
+.navbar a.login-link {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar a.login-link:hover {
+  color: #000000;
+}
+
+a{
+	 background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  background-color: #ffffff;
+  color: #000000;
+  cursor: pointer;
+}
+.producto-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 20px 0;
+}
+
+.producto {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 20px;
+	background-color: aliceblue;
+	border-radius: 10px;
+	box-shadow: 10px 10px 10px rgba(0.1, 0.1, 0.1, 0.1);
+	padding: 20px;
+	min-width: 250px;
+	max-width: 350px;
+	opacity: 0.9;
+}
+
+.producto img {
+	width: 100%;
+	object-fit: contain;
+	margin-bottom: 20px;
+}
+
+.producto h2 {
+	font-size: 24px;
+	margin-bottom: 10px;
+	font-family:sans-serif;
+	text-align: center;
+}
+
+.producto p {
+	font-size: 16px;
+	line-height: 1.5;
+	margin-bottom: 20px;
+	font-family: Verdana, sans-serif;
+	text-align: center;
+}
+
+.producto:hover {
+	transform: translateY(-5px);
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.footer {
+	background-color: lightgray;
+	color: #fff;
+	text-align: center;
+	padding: 30px;
+	opacity: 0.7;
+	margin-top: auto;
+}
